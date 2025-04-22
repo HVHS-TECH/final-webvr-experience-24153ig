@@ -5,13 +5,12 @@
 </head>
 <body>
 
+<div id="splash">
   <h1 align="center">Welcome to Isla's VR experience!!</h1>
   <p align="center">Follow the bridge and take in the view</p>
+</div>
 
-
-<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-<script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
-
+<div id="vrScene">
   </head>
     <body>
     <a-scene>
@@ -108,8 +107,21 @@
       rotation="270 270 999999.9999999999" 
       scale="-0.26 0.32 0.26"></a-entity>
     </a-scene>
+  </div>
 
-
+  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
+ 
+  <script>
+    // Delay the switch to VR scene
+    setTimeout(function() {
+      // Hide splash page
+      document.getElementById('splash').style.display = 'none';
+      // Show VR scene
+      document.getElementById('vrScene').style.display = 'block';
+    }, 3000); // Show splash for 3 seconds
+  </script>
+  
 </body>
 </html>
 
