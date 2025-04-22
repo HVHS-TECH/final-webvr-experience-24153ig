@@ -5,18 +5,26 @@
 </head>
 <body>
 
-<div id="splash">
-  <h1 align="center">Welcome to Isla's VR experience!!</h1>
+  <h1 align="center">Wellcome to Isla's VR experience!!</h1>
   <p align="center">Follow the bridge and take in the view</p>
-</div>
 
-<div id="vrScene">
+
+<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+<script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
+
+  </head>
+    <body>
     <a-scene>
       <a-sky color="lightblue"></a-sky>
     
+
+      <a-entity 
       <a-entity ply-model="src: bridge.ply" position="-5 -2 -11.19721" rotation="270 280 0" scale="1.4 1.31 0.97"></a-entity>
+      ></a-entity>
       
+      <a-entity 
       <a-entity ply-model="src: lake.ply" position="-15.3488 -4.61224 -13.02694" rotation="270 280 0" scale="2.02 2.41 2.26"></a-entity>
+      ></a-entity>
 
       <a-plane
         scale="50 50"
@@ -25,28 +33,36 @@
         position="0 0 0"
     ></a-plane>
       
-
+    <a-entity 
     <a-entity ply-model="src: lily pad.ply" 
     position="6.68609 -1.98463 -8.15215" 
     rotation="270 280 0" 
     scale="0.49 0.38 1"></a-entity>
-                
+      ></a-entity>
+                 
+
+      <a-entity 
       <a-entity <a-entity="" ply-model="src: lily pad.ply" 
       position="8.66077 -2.0103 -0.74751" 
       rotation="270 280 0" 
       scale="-0.28 0.24 1"></a-entity>
+      ></a-entity>
 
+      <a-entity 
       <a-entity <a-entity="" ply-model="src: flower.ply" 
       position="8.79879 -1.78436 -0.96039" 
       rotation="270 280 0" 
       scale="-0.18 0.16 1"></a-entity>
-  
+      ></a-entity>
+
+      <a-entity 
       <a-entity <a-entity="" ply-model="src: flower.ply" 
       position="3.10166 -1.90152 1.36405" 
       rotation="270 280 0" 
       scale="-0.18 0.16 1"></a-entity>
+      ></a-entity>
 
-<a-entity="" ply-model="src: flower.ply" 
+      <a-entity <a-entity="" ply-model="src: flower.ply" 
       position="-4.40766 -1.15862 0" 
       rotation="270 280 0"
        scale="-0.07 -0.08 0.56"></a-entity>
@@ -92,13 +108,8 @@
       rotation="270 270 999999.9999999999" 
       scale="-0.26 0.32 0.26"></a-entity>
     </a-scene>
-</div>
 
-  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-  <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
- 
 
-  
 </body>
 </html>
 
