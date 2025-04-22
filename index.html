@@ -5,19 +5,16 @@
   <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
   <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
   <style>
-    #splash {
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      top: 0; left: 0;
-      z-index: 999;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color:rgb(0, 0, 0);
-      font-size: 2em;
-    }
+
+  #splash {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 2em;
+}
+
+
     #vrScene { display: none; }
   </style>
 </head>
